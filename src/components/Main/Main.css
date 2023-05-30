@@ -1,9 +1,6 @@
-.header {
-
-}
 .main-image {
     position: relative;
-    height: 985px;
+    height: 600px;
     width: 100%;
 }
 .main-image::before {

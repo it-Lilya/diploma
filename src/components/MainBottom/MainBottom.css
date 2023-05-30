@@ -1,19 +1,17 @@
 .main-bottom {
-    border: solid blue;
     width: 75%; 
     position: relative;
     margin: 200px auto;
     display: flex;
-}
-.tigline {
-    width: 50%;
-    border: 1px solid pink;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 .bottom-tigline {
-    width: 500px;
+    width: 45%;
     color: #fff;
     font-family: Roboto-Thin;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 100;
 }
 .selection {

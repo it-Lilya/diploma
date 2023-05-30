@@ -16,3 +16,24 @@ export const Main = () => {
         </header>
     )
 }
+
+setTimeout(() => {
+    let submit = document.querySelector('.search-button');
+    submit.addEventListener('click', (e) => {
+        e.preventDefault();
+        const form = document.querySelector('.bottom-form');
+        const formData = new FormData(form);
+        
+        fetch('https://netology-trainbooking.netoservices.ru/', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    })
+}, 2)
