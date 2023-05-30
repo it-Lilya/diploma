@@ -5,7 +5,7 @@ import { MainBottom } from "../MainBottom/MainBottom";
 
 export const Main = () => {
     return (
-        <header className="header">
+        <div className="header">
             <div className="main-image">
                 <div className="main-container">
                     <div className="main-logo">Лого</div>             
@@ -13,7 +13,7 @@ export const Main = () => {
                 <MainMenu />
                 <MainBottom />
             </div>
-        </header>
+        </div>
     )
 }
 
@@ -23,7 +23,7 @@ setTimeout(() => {
         e.preventDefault();
         const form = document.querySelector('.bottom-form');
         const formData = new FormData(form);
-        
+
         fetch('https://netology-trainbooking.netoservices.ru/', {
             method: 'POST',
             body: formData
