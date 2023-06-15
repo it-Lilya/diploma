@@ -31,13 +31,11 @@ export const CretingOption = () => {
             <input className='checkbox-input option-switch' type='checkbox' defaultValue={check.coupe}/>
           </div>
         </div>
-
         <div className='option-element checkbox-seat'>
           <span className='option-icon seat-img'></span>
           <p className='option-title'>Плацкарт</p>
           <div className='checking' onClick={() => { setCheck({ ...check, seat: !check.seat }); }}>
             <input className='checkbox-input option-switch' type='checkbox' defaultValue={check.seat}
-
             onClick={() => setCheck({ ...check, seat: !check.seat })}/>
           </div>
         </div>
@@ -46,7 +44,6 @@ export const CretingOption = () => {
           <p className='option-title'>Сидячий</p>
           <div className='checking' onClick={() => { setCheck({ ...check, seated: !check.seated }); }}>
             <input className='checkbox-input option-switch' type='checkbox' defaultValue={check.seated}
-
             onClick={() => setCheck({ ...check, seated: !check.seated })}/>
           </div>
         </div>
@@ -55,7 +52,6 @@ export const CretingOption = () => {
           <p className='option-title'>Люкс</p>
           <div className='checking' onClick={() => { setCheck({ ...check, lux: !check.lux }); }}>
             <input className='checkbox-input option-switch' type='checkbox' defaultValue={check.lux}
-
             onClick={() => setCheck({ ...check, lux: !check.lux })}/>
           </div>
         </div>
@@ -64,7 +60,6 @@ export const CretingOption = () => {
           <p className='option-title'>Wi-Fi</p>
           <div className='checking' onClick={() => { setCheck({ ...check, wifi: !check.wifi }); }}>
             <input className='checkbox-input option-switch' type='checkbox' defaultValue={check.wifi}
-
             onClick={() => setCheck({ ...check, wifi: !check.wifi })}/>
           </div>
         </div>
@@ -73,7 +68,6 @@ export const CretingOption = () => {
           <p className='option-title'>Экспресс</p>
           <div className='checking' onClick={() => { setCheck({ ...check, express: !check.express }); }}>
             <input className='checkbox-input option-switch' type='checkbox' defaultValue={check.express}
-
             onClick={() => setCheck({ ...check, express: !check.express })}/>
           </div>
         </div>

@@ -48,13 +48,13 @@ import { Cities } from './Cities/Cities';
 export const HeaderForm = () => (
     <div className='bottom-form-container'>
       <form id='form-search' className='bottom-form'>
-        <div class='fir'>
+        <div className='fir'>
           <h4 className='form-direction'>Направление</h4>
         <div className='input-container'>
           <Cities />
         </div>
         </div>
-        <div class='sec'>
+        <div className='sec'>
           <h4 className='form-direction'>Дата</h4>
         <div className='search-data'>
             <MyApp />

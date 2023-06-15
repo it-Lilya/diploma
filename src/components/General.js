@@ -46,7 +46,6 @@ export const General = () => {
       const formData = document.getElementById('form-search');
       const cityInputs = formData.querySelectorAll('.city-inputs input');
       if (cityInputs[0].value !== '' || cityInputs[1].value !== '') {
-        console.log(cityInputs[0].id);
         fetch(`https://netology-trainbooking.netoservices.ru/routes?from_city_id=${cityInputs[0].id}&to_city_id=${cityInputs[1].id}`)
           .then((response) => response.json()
             .then((data) => localStorage.setItem('routes', data)));

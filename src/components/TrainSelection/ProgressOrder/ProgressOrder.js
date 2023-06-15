@@ -18,10 +18,8 @@ function panelSwitching() {
 }
 export const ProgressOrder = () => {
   useEffect(() => panelSwitching());
-
-  return (
-        <div className='progress-order'>
-            <div className='progress-container'>
+  return (<div className='progress-order'>
+      <div className='progress-container'>
             <NavLink className='paragraph paragraph-active'>
                 <div className='btn-and-text'>
                     <button className='progress-btn'>1</button>
@@ -30,7 +28,6 @@ export const ProgressOrder = () => {
                         <span className='triandle-end triangle-active'></span>
                         <span className='start-triangle'></span>
                     </div>
-
                 </div>
             </NavLink>
             <NavLink className='paragraph'>

@@ -9,11 +9,11 @@ export const Footer = () => {
     setInput(e.target.value);
   }
 
-  function submit(e) {
+  function submit() {
     if (!validateEmail(input)) {
-      alert('Email указана некорректно.\n Пример: mail@mail.com');
+      // alert('Email указана некорректно.\n Пример: mail@mail.com');
+      return;
     }
-    console.log(input);
     fetch(`https://netology-trainbooking.netoservices.ru/subscribe?email=${input}`, {
       method: 'POST',
       header: {
@@ -21,10 +21,8 @@ export const Footer = () => {
       },
       body: input,
     })
-      .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((response) => response.json());
     setInput('');
-    console.log(e.target.previousSibling);
   }
   function scroll() {
     window.scrollTo({ top: 0 });

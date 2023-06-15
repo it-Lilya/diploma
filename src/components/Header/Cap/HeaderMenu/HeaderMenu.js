@@ -10,7 +10,6 @@ function scrollAbout(e) {
     behavior: 'smooth',
     block: 'center',
   });
-  console.log(blockId);
 }
 // function scrollWork() {
 //   window.scrollTo({ top: 1330 });

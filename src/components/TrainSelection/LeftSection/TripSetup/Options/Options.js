@@ -3,7 +3,7 @@ import './Options.css';
 import { CretingOption } from './CreatingOption/CreatingOption';
 
 export const Options = () => (
-    <div classNAme='first-options'>
+    <div className='first-options'>
       <CretingOption />
     </div>
 );
