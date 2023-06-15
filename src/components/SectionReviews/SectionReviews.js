@@ -34,7 +34,7 @@ export const SectionReviews = () => {
       <h4 className='translator-title'>Отзывы</h4>
       <div className='translators-container'>
         {activeArr.map((el) => (
-          <div className='review'>
+          <div className='review' key={el.id}>
             <img className='review-image' src={el.image} alt={el.name} />
             <div className='review-content'>
               <h5 className='review-name'>{el.name}</h5>
@@ -50,7 +50,7 @@ export const SectionReviews = () => {
       <div className='carousel-dots'>
       <ul className='dots-container'>
         {newArray.map((e) => (
-          <li className='dots' onClick={count} id={e[0].id}>
+          <li className='dots' onClick={count} id={e[0].id} key={e[0].id}>
           </li>
         ))}
       </ul>
