@@ -29,7 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint",
-    "coverage": "coverage"
+    "coverage": "jest --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -62,7 +62,6 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "jest": "^27.5.1",
     "npm": "^9.7.1",
     "or": "^0.2.0",
     "react-router": "^6.11.2",
