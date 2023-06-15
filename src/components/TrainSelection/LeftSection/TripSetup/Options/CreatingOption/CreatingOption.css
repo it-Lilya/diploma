@@ -1,0 +1,91 @@
+.option-element {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.option-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-size: cover;
+}
+.coupe-img {
+    background-image: url('/src/images/купе.png');
+}
+.seat-img {
+    background-image: url('/src/images/плацкарт.png');
+}
+.seated-img {
+    background-image: url('/src/images/сидячий.png');
+}
+.lux-img {
+    background-image: url('/src/images/люкс.png');
+}
+.wifi-img {
+    background-image: url('/src/images/wi-fi.png');
+}
+.express-img {
+    background-image: url('/src/images/экспресс.png');
+}
+.option-title {
+    margin-right: 10px;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+input[type=checkbox] {
+    width: 0px;
+    height: 0px;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+}
+.checking {
+    width: 27%;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+    left: 15%;
+}
+.checkbox-input {
+
+}
+.option-switch {
+    display: inline-block;
+    width: 55px;
+    height: 24px;
+    border-radius: 12px;
+    background: #ffffff;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 200ms;
+}
+.option-switch::after {
+    content: '';
+    height: 25px;
+    width: 25px;
+    border-radius: 18px;
+    background: #c4c4c4;
+    top: -3px;
+    left: -6px;
+    transition-duration: 300ms;
+    position: absolute;
+    z-index: 1;
+    margin-top: -14px
+}
+.switch-on {
+    margin-top: -10px
+}
+.on-parent {
+    background: #fcdc9d;
+}
+.switch-on::after {
+    left: 30px;
+    background: #ffa800;
+    margin-top: -14px
+}
