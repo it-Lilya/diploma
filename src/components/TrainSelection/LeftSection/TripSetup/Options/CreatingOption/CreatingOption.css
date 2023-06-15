@@ -10,22 +10,22 @@
     background-size: cover;
 }
 .coupe-img {
-    background-image: url('/src/images/купе.png');
+    background-image: url('/src/images/coupe.png');
 }
 .seat-img {
-    background-image: url('/src/images/плацкарт.png');
+    background-image: url('/src/images/reserved.png');
 }
 .seated-img {
-    background-image: url('/src/images/сидячий.png');
+    background-image: url('/src/images/sedentary.png');
 }
 .lux-img {
-    background-image: url('/src/images/люкс.png');
+    background-image: url('/src/images/lux.png');
 }
 .wifi-img {
     background-image: url('/src/images/wi-fi.png');
 }
 .express-img {
-    background-image: url('/src/images/экспресс.png');
+    background-image: url('/src/images/express.png');
 }
 .option-title {
     margin-right: 10px;

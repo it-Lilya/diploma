@@ -28,7 +28,8 @@ import { TrainSelection } from './TrainSelection/TrainSelection';
 // }
 export const General = () => {
   // const [appState, setAppState] = useState();
-  const optionFirst = <>
+  const optionFirst = 
+    <>
       <Header />
       <FirstSection />
       <SecondSection />
