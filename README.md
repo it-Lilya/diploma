@@ -1,1 +1,0 @@
-[Github Pages](https://it-lilya.github.io/diploma/)
