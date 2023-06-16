@@ -1,14 +1,25 @@
 const path = require('path');
 // eslint-disable-next-line import/no-extraneous-dependencies
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// import HtmlWebpackPlugin from 'html-webpack-plugin';
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 // eslint-disable-next-line import/no-extraneous-dependencies
+// import MiniCssExtractPlugin, { loader as _loader } from 'mini-css-extract-plugin';
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  output: {
-    filename: 'app.bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+  entry: {
+    main: path.resolve(__dirname, './src/index.js'),
   },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'app.bundle.js',
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+  ],
   module: {
     rules: [
       {
@@ -29,19 +40,24 @@ module.exports = {
           name: '[name].[ext]',
         },
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
     ],
   },
-  devServer: {
-    port: 9000,
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: './index.html',
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
-  ],
 };
+// export const devServer = {
+//   port: 9000,
+// };
+// export const plugins = [
+//   new HtmlWebpackPlugin({
+//     template: './src/index.html',
+//     filename: './index.html',
+//   }),
+//   new MiniCssExtractPlugin({
+//     filename: '[name].css',
+//     chunkFilename: '[id].css',
+//   }),
+// ];

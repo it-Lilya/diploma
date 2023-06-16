@@ -16,6 +16,8 @@
     "import/prefer-default-export": "off",
     "no-underscore-dangle": "off",
     "arrow-body-style": "off",
-    "prefer-const": "off"
+    "prefer-const": "off",
+    // "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/react-in-jsx-scope": "off"
   }
 }

@@ -17,14 +17,14 @@ export const reviews = [
     name: 'Лариса Иванова',
     content: 'Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет впервые.',
     // eslint-disable-next-line global-require
-    image: require('../images/user-3.jpeg'),
+    image: require('../images/user-first.png'),
     id: 2,
   },
   {
     name: 'Виктор Невольнов',
     content: 'СМС-сопровождение до посадки Сразу после оплаты ж/д билетов и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.',
     // eslint-disable-next-line global-require
-    image: require('../images/user-4.jpeg'),
+    image: require('../images/user-second.png'),
     id: 3,
   },
   {
@@ -45,14 +45,14 @@ export const reviews = [
     name: 'Лариса Иванова',
     content: 'Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет впервые.',
     // eslint-disable-next-line global-require
-    image: require('../images/user-3.jpeg'),
+    image: require('../images/user-first.png'),
     id: 6,
   },
   {
     name: 'Виктор Невольнов',
     content: 'СМС-сопровождение до посадки Сразу после оплаты ж/д билетов и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.',
     // eslint-disable-next-line global-require
-    image: require('../images/user-4.jpeg'),
+    image: require('../images/user-second.png'),
     id: 7,
   },
   {
